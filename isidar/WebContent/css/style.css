@@ -1,0 +1,24 @@
+.navbar-default {
+	border: none;
+}
+
+section#cover{
+	padding-top: 60px;
+}
+
+.cvr-img {
+	width: 100%;
+	display: block;
+	margin: auto;
+}
+
+footer {
+	padding: 20px;
+}
+
+footer p{
+	text-align: center;
+	font-size: 10px;
+}
+
+
