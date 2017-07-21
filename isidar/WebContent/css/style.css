@@ -1,5 +1,5 @@
 body {
-	overflow-x: hidden; 
+	overflow-x: hidden;
 	scrollbar-face-color: white;
 }
 
@@ -23,43 +23,107 @@ footer {
 	padding: 20px;
 }
 
-footer ul {
-	
-}
-
 footer li {
 	float: left;
 	list-style: none;
 	padding: 0 20px 0 20px;
-	font-weight: bold;	
+	font-weight: bold;
 	font-size: 0.8em;
 	margin: auto;
-	
 }
 
-footer p#copy{
-	text-align:right;
-	font-size: 0.7em;
+footer p#copy {
+	text-align: right;
 	font-weight: bold;
+	font-size: 0.7em;
 }
 
-#footermid {
-	display: none;
-}
-
-footer p#dev{
-	text-align:right;
+footer p#dev {
+	text-align: right;
 	font-size: 0.65em;
 	font-weight: normal;
 }
 
-footer a:link, a:visited, a:hover, a:active  {
+footer a:link, a:visited, a:hover, a:active {
 	color: #000;
 	text-decoration: none !important;
 }
 
+#copy-sm {
+	display: none;
+}
+
+#dev-sm {
+	display: none;
+}
+
 /* Media Queries */
+@media(max-width: 768px) {
+	nav ul li {
+		font-weight: bold;
+		border-top: 1px solid #888888 !important;		
+	}
+	
+	.navbar .nav {
+		margin-bottom:0 !important;	
+	}
+	
+	footer ul {
+		margin-left: 40px;
+	}
+	
+	#copy {
+		display: none;
+	}
+	
+	#dev {
+		display: none;
+	}
+	
+	#copy-sm {
+		display: block;
+		position: relative;
+		left: 25%;
+		margin: 40px 40px 10px;
+		font-weight: bold;
+		font-size: 0.75em;
+	}
+	
+	#dev-sm {
+		display: block;
+		position: relative;
+		left: 35%;
+		margin: 5px;
+		font-weight: normal;
+		font-size: 0.7em;
+	}
+}
 
-
-
-
+@media(max-width: 570px) {
+	footer ul {
+		margin:0;
+	}
+	
+	footer li {
+		float: none;
+		list-style: none;
+		padding: 5px;
+		font-weight: bold;
+		font-size: 0.8em;
+		margin: 0;
+		text-align: center;		
+	}
+	
+	#copy-sm {
+		display: block;
+		font-weight: bold;
+		font-size: 0.75em;
+	}
+	
+	#dev-sm {
+		display: block;
+		font-weight: normal;
+		font-size: 0.7em;
+		padding-left:28px;
+	}
+}	
