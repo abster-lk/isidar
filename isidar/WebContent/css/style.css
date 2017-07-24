@@ -19,6 +19,13 @@ nav ul li {
 	margin: auto;
 }
 
+.col-md-5 .look {
+	background-color: blue;
+	height: 100%;
+	display: block;
+	padding-top:100px;
+}
+
 footer {
 	padding: 20px;
 }
